@@ -13,8 +13,11 @@
             recordUpdated="{! c.doInit}" />
 
 	<lightning:card title="{!'Map for ' + v.property.Name}" iconName="custom:custom106">
+		<div class="slds-p-horizontal_medium">
+			MAP GOES HERE
 		<aura:if isTrue="{! v.mapMarkers.length > 0}">
 			<!-- <lightning:map mapMarkers="{! v.mapMarkers }" zoomLevel="13" class="{! (v.width=='SMALL'?'small slds-grid_vertical slds-nowrap':'')}" /> -->
 		</aura:if>
+	</div>
 	</lightning:card>
 </aura:component>
