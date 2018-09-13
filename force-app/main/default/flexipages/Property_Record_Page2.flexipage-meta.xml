@@ -110,9 +110,6 @@
             <componentName>BrokerCard</componentName>
         </componentInstances>
         <componentInstances>
-            <componentName>PropertyMap</componentName>
-        </componentInstances>
-        <componentInstances>
             <componentInstanceProperties>
                 <name>priceRange</name>
                 <value>100000</value>

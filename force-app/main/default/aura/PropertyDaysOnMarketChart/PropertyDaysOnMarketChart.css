@@ -50,7 +50,7 @@
     bottom: 0px;
     left: 0px;
     right: 0;
-    z-index: 999;
+    z-index: 9;
 }
 
 .THIS .bar.green {
@@ -78,7 +78,7 @@
     height: 34px;
     flex: 1;
     border: solid 1px rgb(216, 221, 230);
-    z-index: 9999;
+    z-index: 99;
     position: relative;
 }
 
