@@ -1,0 +1,9 @@
+{
+    "orgName": "Dreamhouse Bare",
+    "edition": "Developer",
+    "hasSampleData": "true",
+    "orgPreferences" : {
+        "enabled": ["S1DesktopEnabled"],
+        "disabled": ["S1EncryptedStoragePref2"]
+    }
+}

@@ -1,0 +1,6 @@
+<design:component >
+<design:attribute name="tab1" label="1st Tab" default="Schools" description="What would you like to search for?" />
+<design:attribute name="tab2" label="2nd Tab" default="Shopping" description="What would you like to search for?" />
+<design:attribute name="tab3" label="3rd Tab" default="Restaurants" description="What would you like to search for?" />
+<design:attribute name="designHeight" label="Height" datasource="small,medium,large" default="small" description="How tall should the component be on the page?" />
+</design:component>

@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+	<aura:attribute name="myRecordId" type="String" description="Record to which the files should be attached" />
+	<lightning:card title="Upload Contract" iconName="custom:custom15">
+		<div class="slds-p-left_large slds-p-right_medium slds-align_absolute-center">
+			<lightning:fileUpload label="Please upload the signed contracts and other files." recordId="{!v.recordId}" accept="['.pdf', '.png']" onuploadfinished="{!c.handleFilesChange}" class="slds-show" />
+		</div>
+	</lightning:card>
+</aura:component>

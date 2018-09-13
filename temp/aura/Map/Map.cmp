@@ -1,0 +1,12 @@
+<aura:component access="global">
+
+    <ltng:require styles="{!$Resource.Leaflet + '/leaflet.css'}" 
+                  scripts="{!$Resource.Leaflet + '/leaflet.js'}"
+             	  afterScriptsLoaded="{!c.jsLoaded}" />
+
+    <aura:attribute name="location" type="SObject"/>
+    <aura:attribute name="jsLoaded" type="boolean" default="false"/>
+
+    <div aura:id="map"></div>
+    
+</aura:component>

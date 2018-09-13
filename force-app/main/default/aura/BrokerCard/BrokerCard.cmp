@@ -1,0 +1,55 @@
+<aura:component controller="BrokerSelect" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+	<aura:attribute name="recordId" type="Id" />
+	<aura:attribute name="Property" type="Property__c" />
+	<aura:attribute name="Broker" type="Broker__c" />
+	<aura:attribute name="BrokerFields" type="String[]" default="Name,Email__c,Mobile_Phone__c,Title__c" />
+
+	<!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> -->
+
+	<force:recordData aura:id="propertyRecord" 
+					  recordId="{!v.recordId}" 
+					  targetFields="{!v.Property}" 
+					  layoutType="FULL"
+					  recordUpdated="{!c.updateBroker}"  />
+
+	<force:recordData aura:id="brokerRecord" 
+					  targetFields="{!v.Broker}" 
+					  fields="Picture__c" 
+					  layoutType="FULL"
+					   />
+
+	<lightning:card iconName="standard:user" title="{! 'Broker for ' + v.Property.Name}">
+		 <div class="slds-p-left_large slds-p-right_medium">
+
+			<!-- <div class="slds-media">
+				<div class="slds-media__figure">
+					<img src="{!v.Broker.Picture__c}" class="slds-avatar_large slds-avatar_circle" alt="{!v.Broker.Title_c}" />
+				</div>
+				<div class="slds-media__body">
+					<div class="slds-grid">
+						<a onclick="{!c.navToRecord}">
+							<h3 class="slds-text-heading_small slds-m-bottom_xx-small">{!v.Broker.Name}</h3>
+						</a>
+					</div>
+					<div aura:id="propertyDetails" class="slds-m-top_small">
+						<ul class="slds-grid slds-wrap">
+							<li class="slds-list__item slds-size_1-of-1 slds-grid"><span class="slds-text-color_weak slds-m-right_small slds-size_1-of-5">Phone:</span> <span class="slds-size_4-of-5">{!v.Broker.Phone__c}</span></li>
+							<li class="slds-list__item slds-size_1-of-1 slds-grid"><span class="slds-text-color_weak slds-m-right_small slds-size_1-of-5">Mobile:</span> <span class="slds-size_4-of-5">{!v.Broker.Mobile_Phone__c}</span></li>
+							<li class="slds-list__item slds-size_1-of-1 slds-grid"><span class="slds-text-color_weak slds-m-right_small slds-size_1-of-5">Email:</span> <span class="slds-size_4-of-5">{!v.Broker.Email__c}</span></li>
+						</ul>
+					</div>
+				</div> 
+			</div> -->
+			<!-- <aura:if isTrue="{!v.Broker.Id}"> -->
+			<!-- <c:BrokerDetails recordId="{!v.Property.Broker__c}" /> -->
+			<lightning:recordForm 
+					aura:id="brokerForm"
+					recordId="{!v.Property.Broker__c}"
+					objectApiName="Broker__c"
+					fields="{!v.BrokerFields}"
+					columns="1" 
+					mode="View" />
+		<!-- </aura:if> -->
+		</div>
+	</lightning:card>
+</aura:component>

@@ -1,0 +1,31 @@
+.THIS {
+    min-height: 240px;
+}
+.THIS .slds-card__body {
+    margin-bottom : 0;
+}
+
+.THIS .slds-modal__container {
+    margin-top: 100px;
+    height: 90%;
+    width: 90%;
+    max-width: initial;
+}
+
+.THIS .slds-modal__close {
+    position: absolute;
+    top: 100px;
+    right: 5%;
+}
+
+.THIS .title {
+    padding-left: 10px;
+    padding-top: 6px;
+}
+.THIS .small .slds-coordinates__list {
+    max-height: 110px;
+    overflow: auto;
+}
+.THIS .small .slds-map {
+    min-width: 100%;
+}

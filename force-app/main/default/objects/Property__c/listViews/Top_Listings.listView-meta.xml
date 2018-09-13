@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_Listings</fullName>
+    <columns>NAME</columns>
+    <columns>Price__c</columns>
+    <columns>Assessed_Value__c</columns>
+    <columns>Date_Listed__c</columns>
+    <columns>Status__c</columns>
+    <columns>Baths__c</columns>
+    <columns>Beds__c</columns>
+    <columns>Broker__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Price__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>400000</value>
+    </filters>
+    <label>Top Listings</label>
+</ListView>

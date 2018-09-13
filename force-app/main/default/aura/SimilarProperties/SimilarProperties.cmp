@@ -1,0 +1,29 @@
+<aura:component controller="MyPropertyController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+	<aura:attribute name="recordId" type="Id" />
+	<aura:attribute name="similarProperties" type="Object[]" />
+	<aura:attribute name="property" type="Property__c" />
+	<aura:attribute name="remoteRecordId" type="Id" />
+	<aura:attribute name="showDialog" type="String" default="false" />
+	<aura:attribute name="searchCriteria" type="String" default="Price" />
+	<aura:attribute name="priceRange" type="String" default="100000" />
+	<aura:attribute name="designStatus" type="String" />
+	<aura:attribute name="width" type="String" default="LARGE" />
+	<lightning:flexipageRegionInfo width="{!v.width}" />
+
+	<aura:handler event="c:recordUpdated" action="{!c.doSearch}" />
+
+	<force:recordData aura:id="propertyService" recordId="{!v.recordId}" targetRecord="{!v.property}" recordUpdated="{!c.doSearch}" layoutType="FULL" />
+
+	<lightning:card iconName="custom:custom85" title="{! 'Similar Properties by ' + v.searchCriteria}" class="slds-is-relative">
+		<div class="slds-p-horizontal_medium">
+			<ul class="{! 'slds-grid slds-wrap ' + (v.width=='SMALL'?'slds-has-dividers_top-space':'') + (v.width=='MEDIUM'?'slds-grid_align-spread':'')}">
+				<aura:iteration items="{!v.similarProperties}" var="item" indexVar="i">
+					<li class="{! 'slds-item ' + (v.width=='SMALL'?'slds-size_1-of-1':'') + (v.width=='MEDIUM'?'slds-size_1-of-2 slds-p-top_medium slds-p-right_small':'') + (v.width=='LARGE'?'slds-size_1-of-4':'')}">
+						<c:SimilarProperty property="{!item}" />
+					</li>
+				</aura:iteration>
+			</ul>
+		</div>
+		<lightning:spinner aura:id="spinner" variant="brand" size="large" />
+	</lightning:card>
+</aura:component>

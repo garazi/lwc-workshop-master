@@ -1,0 +1,115 @@
+.THIS {
+    /*position: relative;
+    overflow: hidden;*/
+    /*min-height: 28rem;*/
+}
+
+.THIS.small {
+    /*height: 48rem;*/
+}
+
+.THIS.medium {
+    height: 60rem;
+}
+
+.THIS.large {
+    height: 73rem;
+}
+.THIS.autoHeight {
+    min-height: 100vh;
+    height: auto;
+}
+.THIS .slds-section .slds-is-open .slds-section__content.sectionBar {
+   -webkit-transition: height .4s ease-in-out;
+    transition: height .4s ease-in-out !important;
+}
+.THIS .tab-content-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.THIS.small .tab-content-wrapper {
+    height: 25rem;
+}
+.THIS.medium .tab-content-wrapper {
+    height: 37rem;
+}
+.THIS.large .tab-content-wrapper {
+    height: 50rem;
+}
+
+.THIS.small .scroll-container {
+    height: 21.35rem;
+}
+
+.THIS.small .search ~ .scroll-container {
+    height: 18.6rem;
+}
+
+.THIS.medium .scroll-container {
+    height: 37rem;
+}
+
+.THIS.large .scroll-container {
+    height: 50rem;
+}
+
+.THIS.small .scroll-container.details {
+    height: 25rem;
+    padding-bottom: 1rem;
+}
+
+.THIS.medium .scroll-container.details {
+    height: 37rem;
+    padding-bottom: 1rem;
+}
+
+.THIS.large .scroll-container.details {
+    height: 50rem;
+    padding-bottom: 1rem;
+}
+
+.THIS .ratingStars {
+    max-width: 6.5rem;
+}
+
+.THIS .distance {
+    float: right;
+    text-align: right;
+}
+
+.THIS .map {
+    width: 100%;
+    min-height: 15rem;
+}
+
+.THIS .slds-tabs--scoped__content {
+	position: relative;
+	padding: 0;
+}
+
+.THIS .slds-tabs--scoped .slds-tabs--scoped__content {
+    border: none;
+}
+
+.THIS .slds-form-element__help, .THIS span.slds-input {
+    display: none;
+}
+
+.THIS .slds-form-element__label {
+    position: absolute!important;
+    margin: -1px!important;
+    border: 0!important;
+    padding: 0!important;
+    width: 1px!important;
+    height: 1px!important;
+    overflow: hidden!important;
+    clip: rect(0 0 0 0)!important;
+}
+
+.THIS .slds-dropdown--left {
+    left: auto;
+    right: 0;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
