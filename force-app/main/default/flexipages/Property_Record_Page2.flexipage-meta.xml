@@ -107,7 +107,7 @@
             </visibilityRule>
         </componentInstances>
         <componentInstances>
-            <componentName>BrokerCard</componentName>
+            <componentName>PropertyMap</componentName>
         </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
