@@ -2,6 +2,7 @@
 
 	<aura:attribute name="recordId" type="Id" />
 	<aura:attribute name="mapMarkers" type="Object" />
+	<aura:attribute name="mapMarker" type="Object" />
 	<aura:attribute name="property" type="Object" />
 	<aura:attribute name="similarProperties" type="Object[]" />
 	<aura:attribute name="width" type="String" default="" />
@@ -13,14 +14,15 @@
             recordId="{!v.recordId}" 
             targetFields="{!v.property}" 
             layoutType="FULL" 
-            recordUpdated="{! c.getProperties}" />
+            recordUpdated="{! c.doInit}" />
 
 	<lightning:card title="{!'Map for ' + v.property.Name}" iconName="custom:custom106">
-		<div class="slds-p-horizontal_medium">
+		<div class="slds-p-horizontal_medium slds-p-bottom_medium">
 			<!-- MAP GOES HERE -->
 		<aura:if isTrue="{! v.mapMarkers.length > 0}">
 			<lightning:map mapMarkers="{! v.mapMarkers }" zoomLevel="13" class="{! (v.width=='SMALL'?'small slds-grid_vertical slds-nowrap':'')}" />
 		</aura:if>
+		<!-- {!v.body} -->
 	</div>
 	</lightning:card>
 </aura:component>

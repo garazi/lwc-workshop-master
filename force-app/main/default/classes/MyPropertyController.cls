@@ -19,4 +19,18 @@ public class MyPropertyController {
              ];
          }
      }
+
+    public class Marker {
+        public string icon {get; set;}
+        public string title {get; set;}
+        public object location {get; set;}
+    }
+
+     @AuraEnabled
+     public static List<Property__c> getMapMarkers (Id recordId, String searchCriteria, Decimal beds, Decimal price, Decimal priceRange) {
+         List<Property__c> foo = getSimilarProperties(recordId,searchCriteria,beds,price,priceRange);
+
+
+         return foo;
+     }
 }
