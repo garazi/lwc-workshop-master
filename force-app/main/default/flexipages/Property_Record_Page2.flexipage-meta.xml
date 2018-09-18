@@ -32,7 +32,7 @@
         <componentInstances>
             <componentName>PropertyMap</componentName>
         </componentInstances>
-        <name>facet-cbf3c7aa-7411-400f-b551-ec89cac1b669</name>
+        <name>Facet-b4bc28ed-a9e1-48f4-8f52-b8e56545f0e9</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -65,7 +65,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>body</name>
-                <value>facet-cbf3c7aa-7411-400f-b551-ec89cac1b669</value>
+                <value>Facet-b4bc28ed-a9e1-48f4-8f52-b8e56545f0e9</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
@@ -107,23 +107,12 @@
             </visibilityRule>
         </componentInstances>
         <componentInstances>
-            <componentName>PropertyMap</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>priceRange</name>
-                <value>100000</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>searchCriteria</name>
-                <value>Price</value>
-            </componentInstanceProperties>
-            <componentName>SimilarProperties</componentName>
+            <componentName>BrokerCard</componentName>
         </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
                 <name>designHeight</name>
-                <value>small</value>
+                <value>medium</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>tab1</name>
