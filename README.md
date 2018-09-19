@@ -24,3 +24,6 @@ For this demo, you can either use the Developer Console, or VS Code with SFDX. A
 * In the org, open the App Launcher and choose **Dreamhouse Lightning**.
 * Choose the **Data Import** tab, and click the **Initialize Sample Data** button.
 * Click on the **Properties** tab to confirm that you have a list of properties.
+
+
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://https://sfdx-deployer-app.herokuapp.com?template=https://github.com/garazi/Dreamhouse_BRK)
