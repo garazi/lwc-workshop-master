@@ -13,16 +13,15 @@
     <force:recordData aura:id="propertyService" 
             recordId="{!v.recordId}" 
             targetFields="{!v.property}" 
-            layoutType="FULL" 
-            recordUpdated="{! c.doInit}" />
+			layoutType="FULL"
+			fields="Location__Latitude__s, Location__Longitude__s"
+            recordUpdated="{! c.getProperties}" />
 
 	<lightning:card title="{!'Map for ' + v.property.Name}" iconName="custom:custom106">
 		<div class="slds-p-horizontal_medium slds-p-bottom_medium">
-			<!-- MAP GOES HERE -->
 		<aura:if isTrue="{! v.mapMarkers.length > 0}">
-			<lightning:map mapMarkers="{! v.mapMarkers }" zoomLevel="13" class="{! (v.width=='SMALL'?'small slds-grid_vertical slds-nowrap':'')}" />
+			<lightning:map mapMarkers="{! v.mapMarkers }" markersTitle="Similar Properties" zoomLevel="13" class="{! (v.width=='SMALL'?'small slds-grid_vertical slds-nowrap':'')}" />
 		</aura:if>
-		<!-- {!v.body} -->
 	</div>
 	</lightning:card>
 </aura:component>

@@ -12,23 +12,5 @@
 			component.set("v.similarProperties", similarProperties);
 		});
 		$A.enqueueAction(action);
-	},
-	makeMap: function(component) {
-		// var foo = component.find("googleMap");
-		// if (foo) {
-		// 	foo.destroy();
-		// }
-		$A.createComponent(
-			"lightning:map", {
-				"mapMarkers": component.get("v.mapMarkers"),
-				"zoomLevel": "13",
-                "aura:id": "googleMap"
-			},
-			function(newCmp) {
-				var body = component.get("v.body");
-				body.push(newCmp);
-				component.set("v.body", body);
-			}
-		)
 	}
 })
