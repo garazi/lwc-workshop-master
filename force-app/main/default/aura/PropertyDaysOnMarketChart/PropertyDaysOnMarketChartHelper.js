@@ -9,6 +9,6 @@
             status = 'orange'
         }
         component.set("v.status", status);
-        component.set("v.formattedDateListed", new Date(property.Date_Listed__c).toLocaleString('en-US', {month: 'short', year: 'numeric', day: 'numeric'}));
+        component.set("v.formattedDateListed", new Date(property.Date_Listed__c).toLocaleString('en-US', {month: 'short', year: 'numeric', day: 'numeric', timeZone: 'UTC'}));
 	}
 })
