@@ -1,12 +1,9 @@
-# Dreamhouse_BRK
+# Dreamhouse App
 
-The is the Dreamhouse application for use with the Lightning Components BRK at Dreamforce, TrailheaDX and Salesforce World Tours.
+The is the Dreamhouse application for use with the Lightning Web Components workshop.
 
 ## Preparation
 
-For this demo, you can either use the Developer Console, or VS Code with SFDX. 
-
-### SFDX SETUP
 You will need to have SFDX (Salesforce CLI) installed and VS Code. If you have your own Winter'19 devhub, please use it.
 
 * Create a folder with your name on the demo machine where you will be  downloading the source for the demo org.
