@@ -4,16 +4,14 @@ The is the Dreamhouse application for use with the Lightning Web Components work
 
 ## Preparation
 
-You will need to have SFDX (Salesforce CLI) installed and VS Code. If you have your own Winter'19 devhub, please use it.
+You will need to have SFDX (Salesforce CLI) installed and VS Code. You will also need your own Dev Hub.
 
-* Create a folder with your name on the demo machine where you will be  downloading the source for the demo org.
-* Using the CLI, navigate into the folder you created and execute the following command:
-    * `git clone https://github.com/garazi/Dreamhouse_BRK.git `
-* Using the CLI, navigate into the newly created folder “Dreamhouse_BRK”.
+* Using the CLI, navigate to where you want the folder for the source created, and execute the following command:
+    * `git clone https://github.com/garazi/lwc-workshop-master.git `
+* Using the CLI, navigate into the newly created folder “lwc-workshop-master”.
 * Log into your devhub with the following:
     * `sfdx force:auth:web:login -a dfDevHub`
-
-        * Close the browser window once you have authenticated
+* Close the browser window once you have authenticated.
 * Run the following command, where YOUR_ORG_NAME is whatever you want:
     * `sfdx force:org:create -f config/project-scratch-def.json -s -a YOUR_ORG_NAME -d 30 -w 10`
 * Once the scratch org has been created, execute the following commands:
