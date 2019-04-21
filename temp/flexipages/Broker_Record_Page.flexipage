@@ -73,7 +73,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentName>BrokerProperties</componentName>
         </componentInstances>
         <mode>Replace</mode>
         <name>sidebar</name>
