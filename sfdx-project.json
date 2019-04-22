@@ -3,7 +3,7 @@
         {
             "path": "force-app",
             "default": true,
-            "package": "LC_BRK",
+            "package": "lcBRK",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT"
         }
@@ -12,6 +12,6 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "44.0",
     "packageAliases": {
-        "LC_BRK": "0HoB0000000CamlKAC"
+        "lcBRK": "0HoB0000000CamlKAC"
     }
 }
