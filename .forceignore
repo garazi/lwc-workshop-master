@@ -3,4 +3,13 @@
 #
 
 package.xml
+AppSwitcher.appMenu
+
+# LWC configuration files
 **/jsconfig.json
+**/.eslintrc.json
+
+force-app/main/default/profiles/Admin.profile-meta.xml
+
+# LWC Jest
+**/__tests__/**

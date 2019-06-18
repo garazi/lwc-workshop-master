@@ -1,17 +1,12 @@
 {
     "packageDirectories": [
-        {
-            "path": "force-app",
-            "default": true,
-            "package": "lcBRK",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT"
-        }
+      {
+        "path": "force-app",
+        "default": true
+      }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "45.0",
-    "packageAliases": {
-        "lcBRK": "0HoB0000000CamlKAC"
-    }
-}
+    "sourceApiVersion": "45.0"
+  }
+  
