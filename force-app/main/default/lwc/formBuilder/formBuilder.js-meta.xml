@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="formBuilder">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+      <target>lightning__AppPage</target>
+      <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+      <targetConfig targets="lightning__RecordPage">
+      <property name="object" datasource="apex://sObjectPicklistController" label="Object" type="String" description="Select sObject"/>
+      <property name="record" label="Record Id" type="String" />
+      <property name="title" label="Card Title" type="String" />
+      <property name="icon" label="Card Icon" type="String" />
+      <property name="fieldsToDisplay" label="Fields to Display" type="String" />
+      <property name="layout" label="Layout Type" type="String" datasource="Full,Compact,None" default="None" />
+      <property name="columns" label="Number of Columns" type="String" default="1" />
+      <property name="mode" label="Form Mode" type="String" datasource="view,edit,readonly" default="view" />
+      </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

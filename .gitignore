@@ -1,1 +1,12 @@
 .sfdx
+.vscode
+config
+
+.bash_profile
+.forceignore
+force-app/main/default/lwc/.eslintrc.json
+force-app/main/default/lwc/jsconfig.json
+.vscode/settings.json
+sfdx-project.json
+.forceignore
+.gitignore
