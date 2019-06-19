@@ -946,7 +946,7 @@
         <name>ViewSetup</name>
     </userPermissions>
     <userPermissions>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <name>WaveManagePrivateAssetsUser</name>
     </userPermissions>
     <userPermissions>
