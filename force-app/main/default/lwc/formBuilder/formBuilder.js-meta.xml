@@ -1,0 +1,22 @@
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="formBuilder">
+  <apiVersion>46.0</apiVersion>
+  <isExposed>true</isExposed>
+  <masterLabel>Form Builder</masterLabel>
+  <targets>
+    <target>lightning__AppPage</target>
+    <target>lightning__RecordPage</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightning__RecordPage">
+      <!-- property name="object" label="Object" type="String" />  -->
+      <property name="object" label="Object" type="String" datasource="apex://DescribeObjects" />
+      <property name="record" label="Record Id" type="String" />
+      <property name="title" label="Card Title" type="String" />
+      <property name="icon" label="Card Icon" type="String" />
+      <property name="fieldsToDisplay" label="Fields to Display" type="String" description="A comma-seperated list of field names. If you have a selected a layoutType, use this to add fields not on the standard layout." />
+      <property name="layout" label="Layout Type" type="String" datasource="Full,Compact,None" default="None" />
+      <property name="columns" label="Number of Columns" type="String" default="1" />
+      <property name="mode" label="Form Mode" type="String" datasource="view,edit,readonly" default="view" />
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

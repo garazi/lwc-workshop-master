@@ -9,5 +9,5 @@
         "SFDX_SET_CLIENT_IDS": "sfdx-vscode"
     },
     "salesforcedx-vscode-core.show-cli-success-msg": false,
-    "eslint.nodePath": "/Users/grewis/.vscode/extensions/salesforce.salesforcedx-vscode-lwc-45.10.0/node_modules"
+    "eslint.nodePath": "/Users/eric.shen/.vscode/extensions/salesforce.salesforcedx-vscode-lwc-46.11.0/node_modules"
 }

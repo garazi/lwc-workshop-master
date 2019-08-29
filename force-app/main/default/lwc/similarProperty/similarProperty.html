@@ -1,0 +1,70 @@
+<template>
+    <div class="slds-media">
+        <div class="slds-media__figure">
+            <img src={item.Thumbnail__c} class="slds-avatar_large slds-avatar_circle" alt={item.Title_c} />
+        </div>
+        <div class="slds-media__body">
+            <div class="slds-grid slds-hint-parent">
+                <a onclick={navigateToRecord}>
+                    <h3 class="slds-text-heading_small slds-m-bottom_xx-small">{item.Name}</h3>
+                </a>
+                <template if:false={editMode}>
+                    <lightning-button-icon icon-name="utility:edit" class="slds-col_bump-left"
+                        icon-class="slds-button__icon_hint" variant="bare" alternative-text="Edit Record"
+                        onclick={editRecord}></lightning-button-icon>
+                </template>
+            </div>
+            <template if:false={editMode}>
+                <lightning-record-view-form object-api-name="Property__c" record-id={item.Id}>
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="6">
+                            <lightning-output-field field-name="Price__c"></lightning-output-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6">
+                            <lightning-output-field field-name="Beds__c"></lightning-output-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6">
+                            <lightning-output-field field-name="Baths__c"></lightning-output-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6">
+                            <lightning-output-field field-name="Status__c"></lightning-output-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12">
+                            <lightning-output-field field-name="Broker__c"></lightning-output-field>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-record-view-form>
+            </template>
+            <template if:true={editMode}>
+                <lightning-record-edit-form object-api-name="Property__c" record-id={item.Id} onsuccess={handleSuccess}
+                    onerror={handleError}>
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="6">
+                            <lightning-input-field field-name="Price__c"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6">
+                            <lightning-input-field field-name="Beds__c"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6">
+                            <lightning-input-field field-name="Baths__c"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6">
+                            <lightning-input-field field-name="Status__c"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12">
+                            <lightning-input-field field-name="Broker__c"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12">
+                            <div class="slds-m-top_large slds-grid slds-grid_align-center">
+                                <lightning-button variant="neutral" label="Cancel" title="Cancel" type="text"
+                                    onclick={handleCancel} class="slds-m-right_small"></lightning-button>
+                                <lightning-button variant="brand" label="Submit" title="Submit" type="submit">
+                                </lightning-button>
+                            </div>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-record-edit-form>
+            </template>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title={cardTitle} icon-name="custom:custom85">
+        <div class="slds-m-around_medium">
+            <lightning-record-form record-id={brokerId} object-api-name="Broker__c" mode="View" fields={brokerFields}
+                columns="2" onsuccess={fireToast}></lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

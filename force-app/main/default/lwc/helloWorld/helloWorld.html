@@ -1,0 +1,21 @@
+<template>
+  <div class="slds-card">
+    <div class="slds-card__body slds-card__body_inner slds-p-vertical_small">
+      Hello, {greeting} !
+      <input
+        type="text"
+        value={myInput}
+        class="slds-input"
+        onchange={handleChange}
+      />
+      <button
+        name="Update"
+        type="submit"
+        class="slds-button slds-button_brand slds-m-top_small"
+        onclick={handleClick}
+      >
+        Update
+      </button>
+    </div>
+  </div>
+</template>

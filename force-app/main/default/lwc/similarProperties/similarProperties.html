@@ -1,0 +1,23 @@
+<template>
+  <lightning-card title={cardTitle} icon-name="custom:custom85">
+    <div class="slds-m-around_medium spacer">
+      <ul class="slds-list_vertical slds-has-dividers_top-space">
+        <template for:each={props} for:item="item" if:true={props}>
+          <li key={item.Id} class="slds-list__item">
+            <c-similar-Property item={item}></c-similar-Property>
+          </li>
+        </template>
+        <template if:true={noData}>
+          <li class="slds-list__item">
+            <h3 class="slds-text-heading_small slds-text-color_error">
+              No similar properties found.
+            </h3>
+          </li>
+        </template>
+      </ul>
+    </div>
+  </lightning-card>
+  <template if:false={props}>
+    <lightning-spinner variant="brand" size="large"></lightning-spinner>
+  </template>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card icon-name={icon} title={title}>
+        <div class="slds-p-left_large slds-p-right_medium">
+            <template if:true={object}>
+                <template if:true={message}>
+                    <h3>{message}</h3>
+                </template>
+                <lightning-record-form object-api-name={object} mode={mode} columns={columns}></lightning-record-form>
+            </template>
+            <template if:false={object}>
+                <h3>{message}</h3>
+            </template>
+        </div>
+    </lightning-card>
+</template>
