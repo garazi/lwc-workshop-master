@@ -1,0 +1,25 @@
+{
+  "name": "lwc-workshop-master",
+  "version": "1.0.0",
+  "description": "The is the Dreamhouse application for use with the Lightning Web Components workshop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:unit": "lwc-jest",
+    "test:unit:debug": "lwc-jest --debug",
+    "test:unit:watch": "lwc-jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gr8Gatsby/lwc-workshop-master.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gr8Gatsby/lwc-workshop-master/issues"
+  },
+  "homepage": "https://github.com/Gr8Gatsby/lwc-workshop-master#readme",
+  "devDependencies": {
+    "@salesforce/lwc-jest": "^0.5.4"
+  }
+}
