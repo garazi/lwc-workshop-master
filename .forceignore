@@ -4,3 +4,6 @@
 
 package.xml
 **/jsconfig.json
+
+# LWC Jest tests
+**/__tests__/**
