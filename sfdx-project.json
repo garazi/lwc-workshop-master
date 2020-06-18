@@ -10,7 +10,7 @@
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "46.0",
+  "sourceApiVersion": "48.0",
   "packageAliases": {
     "lcBRK": "0HoB0000000CamlKAC"
   }
